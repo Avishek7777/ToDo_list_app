@@ -11,9 +11,9 @@
     <thead>
       <tr>
         <th scope="col">#</th>
-        <th scope="col">Created Date</th>
-        <th scope="col">Content</th>
         <th scope="col">Status</th>
+        <th scope="col">Content</th>
+        <th scope="col">Created Date</th>
       </tr>
     </thead>
     <tbody>
@@ -22,11 +22,7 @@
         <th scope="row">{{task.id}}</th>
         <td>{{task.status}}</td>
         <td>{{task.content}}</td>
-        <td>
-          <a href="/edit/{{task.id}}">edit</a>
-          <a href="/complete/{{task.id}}">complete</a>
-          <a href="/delete/{{task.id}}">delete</a>
-        </td>
+        <td>{{task.date}}</td>
       </tr>
       {% endfor %}
     </tbody>
